@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Timer for ISSF Training</title>
+<style>
+  :root {
+    --navy:    #0F172A;
+    --slate:   #1E293B;
+    --paper:   #F7F8FA;
+    --ink:     #16202E;
+    --muted:   #5A6675;
+    --amber:   #CDA53A;
+    --rule:    #D8DDE4;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.4rem; }
+
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 2.6rem 0 2.1rem;
+    border-bottom: 3px solid var(--amber);
+  }
+  header .wrap { padding-top: 0; }
+  .kicker {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin: 0 0 0.7rem;
+  }
+  header h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 4.5vw, 2.1rem);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header p.sub { margin: 0.7rem 0 0; color: #A8B4C4; font-size: 0.95rem; }
+
+  /* Metadane w monospace — echo cyfrowego stopera z aplikacji */
+  dl.meta {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.15rem 1.2rem;
+    margin: 1.5rem 0 0;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+  }
+  dl.meta dt { color: #7C8A9A; }
+  dl.meta dd { margin: 0; color: #E2E8F0; }
+
+  nav.langs {
+    background: var(--slate);
+    padding: 0.85rem 0;
+  }
+  nav.langs .wrap { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  nav.langs a {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    color: #C7D0DB;
+    text-decoration: none;
+    padding: 0.32rem 0.7rem;
+    border: 1px solid #3A4657;
+    border-radius: 3px;
+  }
+  nav.langs a:hover, nav.langs a:focus-visible { color: var(--navy); background: var(--amber); border-color: var(--amber); }
+
+  main { padding: 2.6rem 0 4rem; }
+  section.lang { padding-top: 1rem; }
+  section.lang + section.lang { margin-top: 3.4rem; border-top: 1px solid var(--rule); padding-top: 2.6rem; }
+
+  h2 {
+    font-size: 1.35rem;
+    margin: 0 0 1.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--navy);
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 1.02rem;
+    margin: 2.1rem 0 0.5rem;
+    letter-spacing: 0.01em;
+  }
+  h3 .num {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: var(--amber);
+    font-size: 0.82rem;
+    margin-right: 0.5rem;
+  }
+  p { margin: 0.7rem 0; }
+  ul { margin: 0.7rem 0; padding-left: 1.3rem; }
+  li { margin: 0.35rem 0; }
+  strong { font-weight: 650; }
+
+  /* Kluczowa deklaracja — jedyny wyróżniony blok na stronie */
+  .core {
+    background: #fff;
+    border-left: 4px solid var(--amber);
+    padding: 1.15rem 1.3rem;
+    margin: 1.4rem 0;
+    box-shadow: 0 1px 2px rgba(15,23,42,0.06);
+  }
+  .core p { margin: 0; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.86em;
+    background: #EAEEF3;
+    padding: 0.1em 0.4em;
+    border-radius: 3px;
+  }
+  a { color: #1B4F8A; }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 1.8rem 0 3rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">Klub Strzelecki M31</p>
+    <h1>Privacy Policy<br>Timer for ISSF Training</h1>
+    <p class="sub">Zásady ochrany osobních údajů · Adatvédelmi szabályzat · Polityka prywatności · Zásady ochrany osobných údajov</p>
+    <dl class="meta">
+      <dt>Application</dt><dd>ch.m31.issf.training</dd>
+      <dt>Valid from</dt><dd>2026-08-03</dd>
+      <dt>Contact</dt><dd>neuron.m31@gmail.com</dd>
+    </dl>
+  </div>
+</header>
+
+<nav class="langs">
+  <div class="wrap">
+    <a href="#en">ENGLISH</a>
+    <a href="#cs">ČESKY</a>
+    <a href="#hu">MAGYAR</a>
+    <a href="#pl">POLSKI</a>
+    <a href="#sk">SLOVENSKY</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ══════════════════ ENGLISH ══════════════════ -->
+<section class="lang" id="en" lang="en">
+  <h2>Privacy Policy</h2>
+
+  <div class="core">
+    <p><strong>This app collects no personal data, sends nothing to any server, and contains no advertising or analytics.</strong> Everything created while using the app stays on your device.</p>
+  </div>
+
+  <h3><span class="num">01</span>Who is responsible</h3>
+  <p>The app “Timer for ISSF Training” (identifier <code>ch.m31.issf.training</code>) is published by Klub Strzelecki M31. For privacy matters, write to the address given at the top of this page.</p>
+
+  <h3><span class="num">02</span>Microphone access</h3>
+  <p>The app requests the <code>RECORD_AUDIO</code> permission because it detects shots by sound. Without it, shot timing — the app's core function — does not work.</p>
+  <p>How it works:</p>
+  <ul>
+    <li>audio is analysed <strong>on your device only</strong>, in real time,</li>
+    <li>the app measures nothing but <strong>sound level</strong>, to recognise the moment of a shot,</li>
+    <li>no recording is <strong>ever written to a file</strong>,</li>
+    <li>audio is <strong>never transmitted</strong> or shared,</li>
+    <li>listening is active only during the shooting window and stops the moment it ends.</li>
+  </ul>
+
+  <h3><span class="num">03</span>Training results</h3>
+  <p>Shot times, splits and session history are stored in a database <strong>on your device</strong>. We have no access to them.</p>
+  <p>If you have Android Backup (Auto Backup) enabled, Android may copy this data to your Google account. That happens within Google's services, under Google's privacy policy, and remains under your control — you can turn it off in your device settings. Licence data is deliberately excluded from that backup.</p>
+  <p>Uninstalling the app deletes all stored results. You can also clear the history by clearing the app's data in system settings.</p>
+
+  <h3><span class="num">04</span>In-app purchases</h3>
+  <p>Paid features are sold through Google Play's billing system. Google handles the entire purchase process — the app <strong>never sees or stores</strong> card details, billing addresses or any other payment information. It receives only a confirmation that a purchase is active, which is stored locally in encrypted form.</p>
+  <p>The app uses an internet connection to handle purchases and to check for updates. It connects to Google Play services and nothing else.</p>
+
+  <h3><span class="num">05</span>What the app does not do</h3>
+  <ul>
+    <li>no user account, no sign-in,</li>
+    <li>collects no name, email address, phone number or advertising identifier,</li>
+    <li>does not determine or store your location,</li>
+    <li>uses no analytics, usage statistics or crash-reporting services,</li>
+    <li>shows no advertising,</li>
+    <li>shares no data with third parties, because it gathers none.</li>
+  </ul>
+
+  <h3><span class="num">06</span>Children</h3>
+  <p>The app is a training tool for sport shooting competitors and is not directed at children. We do not knowingly collect data from children — we collect none from anyone.</p>
+
+  <h3><span class="num">07</span>Your rights</h3>
+  <p>Because we neither collect nor process your personal data, we hold no information that we could disclose, correct or delete on request. You control the data stored by the app yourself, through your device settings. If you have any privacy questions, write to the contact address.</p>
+
+  <h3><span class="num">08</span>Changes to this policy</h3>
+  <p>If the app's behaviour changes in the future, we will update this page and change the “Effective from” date at the top. We recommend checking this page occasionally.</p>
+</section>
+
+<!-- ══════════════════ ČESKY ══════════════════ -->
+<section class="lang" id="cs" lang="cs">
+  <h2>Zásady ochrany osobních údajů</h2>
+
+  <div class="core">
+    <p><strong>Aplikace neshromažďuje žádné osobní údaje, neodesílá data na žádné servery a neobsahuje reklamu ani analytické nástroje.</strong> Vše, co při používání aplikace vznikne, zůstává ve vašem zařízení.</p>
+  </div>
+
+  <h3><span class="num">01</span>Kdo za aplikaci odpovídá</h3>
+  <p>Aplikaci „Timer for ISSF Training“ (identifikátor <code>ch.m31.issf.training</code>) vydává Klub Strzelecki M31. Ve věcech ochrany údajů napište na adresu uvedenou v úvodu této stránky.</p>
+
+  <h3><span class="num">02</span>Přístup k mikrofonu</h3>
+  <p>Aplikace žádá o oprávnění <code>RECORD_AUDIO</code>, protože rozpoznává rány podle zvuku. Bez něj nefunguje měření časů ran, tedy základní funkce aplikace.</p>
+  <p>Jak to funguje:</p>
+  <ul>
+    <li>zvuk je analyzován <strong>výhradně v zařízení</strong>, v reálném čase,</li>
+    <li>aplikace měří pouze <strong>hlasitost zvuku</strong>, aby rozpoznala okamžik rány,</li>
+    <li>nahrávka se <strong>neukládá</strong> do žádného souboru,</li>
+    <li>zvuk se <strong>nikam neodesílá</strong> ani nesdílí,</li>
+    <li>naslouchání je aktivní jen v okně střelby a vypne se ihned po jeho skončení.</li>
+  </ul>
+
+  <h3><span class="num">03</span>Výsledky tréninků</h3>
+  <p>Časy ran, splity a historie sezení se ukládají do databáze <strong>ve vašem zařízení</strong>. Nemáme k nim přístup.</p>
+  <p>Pokud máte zapnutou funkci Záloha Android (Auto Backup), systém Android může tato data zkopírovat na váš účet Google. Děje se to v rámci služeb Google, podle zásad ochrany údajů Google, a zůstává to pod vaší kontrolou — v nastavení zařízení to lze vypnout. Data licence jsou z této zálohy záměrně vyloučena.</p>
+  <p>Odinstalování aplikace odstraní všechny uložené výsledky. Historii můžete také smazat vymazáním dat aplikace v nastavení systému.</p>
+
+  <h3><span class="num">04</span>Nákupy v aplikaci</h3>
+  <p>Placené funkce se prodávají prostřednictvím platebního systému Google Play. Celý proces nákupu obsluhuje Google — aplikace <strong>nevidí ani neuchovává</strong> údaje o kartě, adresu ani jiné platební informace. Dostává pouze potvrzení, že je nákup aktivní, a to se ukládá lokálně v zašifrované podobě.</p>
+  <p>K obsluze nákupů a kontrole aktualizací aplikace používá internetové připojení. Připojuje se ke službám Google Play a k ničemu jinému.</p>
+
+  <h3><span class="num">05</span>Co aplikace nedělá</h3>
+  <ul>
+    <li>nevytváří uživatelský účet a nevyžaduje přihlášení,</li>
+    <li>neshromažďuje jméno, e-mail, telefonní číslo ani reklamní identifikátory,</li>
+    <li>nezjišťuje ani neukládá vaši polohu,</li>
+    <li>nepoužívá analytické nástroje, statistiky používání ani hlášení chyb,</li>
+    <li>nezobrazuje reklamu,</li>
+    <li>nepředává žádná data třetím stranám, protože žádná neshromažďuje.</li>
+  </ul>
+
+  <h3><span class="num">06</span>Děti</h3>
+  <p>Aplikace je tréninkový nástroj pro sportovní střelce a není určena dětem. Vědomě neshromažďujeme údaje od dětí — neshromažďujeme je od nikoho.</p>
+
+  <h3><span class="num">07</span>Vaše práva</h3>
+  <p>Protože vaše osobní údaje neshromažďujeme ani nezpracováváme, nemáme žádné informace, které bychom mohli na vaši žádost poskytnout, opravit nebo smazat. Data uložená aplikací kontrolujete sami, přes nastavení svého zařízení. S dotazy k ochraně údajů se obraťte na kontaktní adresu.</p>
+
+  <h3><span class="num">08</span>Změny těchto zásad</h3>
+  <p>Pokud se chování aplikace v budoucnu změní, tuto stránku aktualizujeme a změníme datum „Obowiązuje od“ v úvodu. Doporučujeme stránku občas zkontrolovat.</p>
+</section>
+
+<!-- ══════════════════ MAGYAR ══════════════════ -->
+<section class="lang" id="hu" lang="hu">
+  <h2>Adatvédelmi szabályzat</h2>
+
+  <div class="core">
+    <p><strong>Az alkalmazás nem gyűjt személyes adatokat, nem küld adatokat semmilyen szerverre, és nem tartalmaz reklámot vagy analitikai eszközöket.</strong> Minden, ami az alkalmazás használata során keletkezik, az Ön eszközén marad.</p>
+  </div>
+
+  <h3><span class="num">01</span>Ki felel az alkalmazásért</h3>
+  <p>A „Timer for ISSF Training“ alkalmazást (azonosító: <code>ch.m31.issf.training</code>) a Klub Strzelecki M31 adja ki. Adatvédelmi ügyekben írjon az oldal tetején megadott címre.</p>
+
+  <h3><span class="num">02</span>Mikrofon-hozzáférés</h3>
+  <p>Az alkalmazás azért kéri a <code>RECORD_AUDIO</code> engedélyt, mert a lövéseket hang alapján érzékeli. Enélkül nem működik a lövések időmérése, ami az alkalmazás alapfunkciója.</p>
+  <p>Hogyan működik:</p>
+  <ul>
+    <li>a hangot <strong>kizárólag az eszközön</strong>, valós időben elemzi,</li>
+    <li>az alkalmazás csak a <strong>hangerőt</strong> méri, hogy felismerje a lövés pillanatát,</li>
+    <li>a felvétel <strong>nem kerül mentésre</strong> semmilyen fájlba,</li>
+    <li>a hang <strong>sehová nem kerül továbbításra</strong> és nem kerül megosztásra,</li>
+    <li>a hallgatás csak a lövési ablakban aktív, és annak végeztével azonnal kikapcsol.</li>
+  </ul>
+
+  <h3><span class="num">03</span>Edzések eredményei</h3>
+  <p>A lövések idejét, a splitteket és a sessiók előzményeit egy adatbázis tárolja <strong>az Ön eszközén</strong>. Nincs hozzájuk hozzáférésünk.</p>
+  <p>Ha be van kapcsolva az Android Biztonsági mentés (Auto Backup) funkció, az Android átmásolhatja ezeket az adatokat az Ön Google-fiókjába. Ez a Google szolgáltatásain belül, a Google adatvédelmi szabályzata szerint történik, és az Ön ellenőrzése alatt marad — az eszköz beállításaiban kikapcsolható. A licencadatok szándékosan ki vannak zárva ebből a mentésből.</p>
+  <p>Az alkalmazás eltávolítása töröl minden mentett eredményt. Az előzményeket az alkalmazás adatainak törlésével is kiürítheti a rendszerbeállításokban.</p>
+
+  <h3><span class="num">04</span>Alkalmazáson belüli vásárlások</h3>
+  <p>A fizetős funkciókat a Google Play számlázási rendszerén keresztül értékesítjük. A teljes vásárlási folyamatot a Google kezeli — az alkalmazás <strong>nem látja és nem tárolja</strong> a kártyaadatokat, a számlázási címet vagy más fizetési információt. Csak egy visszaigazolást kap arról, hogy a vásárlás aktív, amelyet helyben, titkosított formában tárol.</p>
+  <p>A vásárlások kezeléséhez és a frissítések ellenőrzéséhez az alkalmazás internetkapcsolatot használ. Ilyenkor a Google Play szolgáltatásaihoz kapcsolódik, és semmi máshoz.</p>
+
+  <h3><span class="num">05</span>Amit az alkalmazás nem tesz</h3>
+  <ul>
+    <li>nem hoz létre felhasználói fiókot és nem igényel bejelentkezést,</li>
+    <li>nem gyűjt nevet, e-mail-címet, telefonszámot vagy reklámazonosítót,</li>
+    <li>nem határozza meg és nem tárolja az Ön tartózkodási helyét,</li>
+    <li>nem használ analitikai eszközöket, használati statisztikákat vagy hibajelentő rendszereket,</li>
+    <li>nem jelenít meg reklámot,</li>
+    <li>nem ad át semmilyen adatot harmadik feleknek, mert semmit sem gyűjt.</li>
+  </ul>
+
+  <h3><span class="num">06</span>Gyermekek</h3>
+  <p>Az alkalmazás sportlövők edzéseszköze, és nem gyermekeknek szól. Tudatosan nem gyűjtünk adatokat gyermekektől — senkitől sem gyűjtünk.</p>
+
+  <h3><span class="num">07</span>Az Ön jogai</h3>
+  <p>Mivel az Ön személyes adatait nem gyűjtjük és nem dolgozzuk fel, nincs olyan információnk, amelyet kérésére kiadhatnánk, javíthatnánk vagy törölhetnénk. Az alkalmazás által tárolt adatokat Ön maga felügyeli, az eszköze beállításain keresztül. Adatvédelmi kérdésekkel forduljon a kapcsolattartási címhez.</p>
+
+  <h3><span class="num">08</span>A szabályzat módosításai</h3>
+  <p>Ha az alkalmazás működése a jövőben megváltozik, frissítjük ezt az oldalt, és módosítjuk a „Obowiązuje od“ dátumot az elején. Javasoljuk az oldal alkalmankénti ellenőrzését.</p>
+</section>
+
+<!-- ══════════════════ POLSKI ══════════════════ -->
+<section class="lang" id="pl" lang="pl">
+  <h2>Polityka prywatności</h2>
+
+  <div class="core">
+    <p><strong>Aplikacja nie zbiera żadnych danych osobowych, nie wysyła danych na żadne serwery i nie zawiera reklam ani narzędzi analitycznych.</strong> Wszystko, co powstaje w trakcie korzystania z aplikacji, pozostaje na Twoim urządzeniu.</p>
+  </div>
+
+  <h3><span class="num">01</span>Kto odpowiada za aplikację</h3>
+  <p>Aplikację „Timer for ISSF Training” (identyfikator <code>ch.m31.issf.training</code>) udostępnia Klub Strzelecki M31. W sprawach dotyczących prywatności napisz na adres podany na początku tej strony.</p>
+
+  <h3><span class="num">02</span>Dostęp do mikrofonu</h3>
+  <p>Aplikacja prosi o uprawnienie <code>RECORD_AUDIO</code>, ponieważ wykrywa strzały na podstawie dźwięku. Bez tego nie działa pomiar czasu strzałów, czyli podstawowa funkcja aplikacji.</p>
+  <p>Sposób działania:</p>
+  <ul>
+    <li>dźwięk jest analizowany <strong>wyłącznie na urządzeniu</strong>, w czasie rzeczywistym,</li>
+    <li>aplikacja mierzy jedynie <strong>natężenie dźwięku</strong>, aby rozpoznać moment strzału,</li>
+    <li>nagranie <strong>nie jest zapisywane</strong> do żadnego pliku,</li>
+    <li>dźwięk <strong>nie jest nigdzie przesyłany</strong> ani udostępniany,</li>
+    <li>nasłuch jest włączony tylko w oknie strzelania i wyłącza się natychmiast po jego zakończeniu.</li>
+  </ul>
+
+  <h3><span class="num">03</span>Wyniki treningów</h3>
+  <p>Czasy strzałów, splity i historia sesji są zapisywane w bazie danych <strong>na Twoim urządzeniu</strong>. Nie mamy do nich dostępu.</p>
+  <p>Jeśli masz włączoną funkcję Kopia zapasowa Android (Auto Backup), system Android może skopiować te dane na Twoje konto Google. Odbywa się to w ramach usług Google, zgodnie z polityką prywatności Google, i pozostaje pod Twoją kontrolą — możesz to wyłączyć w ustawieniach urządzenia. Dane licencji są z tej kopii celowo wyłączone.</p>
+  <p>Usunięcie aplikacji usuwa wszystkie zapisane wyniki. Historię możesz też skasować, czyszcząc dane aplikacji w ustawieniach systemu.</p>
+
+  <h3><span class="num">04</span>Zakupy w aplikacji</h3>
+  <p>Płatne funkcje są sprzedawane przez system płatności Google Play. Cały proces zakupu obsługuje Google — aplikacja <strong>nie widzi i nie przechowuje</strong> danych karty, adresu ani innych informacji płatniczych. Otrzymuje wyłącznie potwierdzenie, że zakup jest aktywny. Potwierdzenie to jest zapisywane lokalnie w zaszyfrowanej formie.</p>
+  <p>Do obsługi zakupów i sprawdzania aktualizacji aplikacja korzysta z połączenia internetowego. Łączy się wtedy z usługami Google Play i z niczym więcej.</p>
+
+  <h3><span class="num">05</span>Czego aplikacja nie robi</h3>
+  <ul>
+    <li>nie tworzy konta użytkownika i nie wymaga logowania,</li>
+    <li>nie zbiera imienia, adresu e-mail, numeru telefonu ani identyfikatorów reklamowych,</li>
+    <li>nie ustala ani nie zapisuje Twojej lokalizacji,</li>
+    <li>nie korzysta z narzędzi analitycznych, statystyk użycia ani systemów raportowania błędów,</li>
+    <li>nie wyświetla reklam,</li>
+    <li>nie przekazuje żadnych danych osobom trzecim, bo żadnych nie gromadzi.</li>
+  </ul>
+
+  <h3><span class="num">06</span>Dzieci</h3>
+  <p>Aplikacja jest narzędziem treningowym dla zawodników sportu strzeleckiego i nie jest skierowana do dzieci. Nie zbieramy świadomie danych od dzieci — nie zbieramy ich w ogóle od nikogo.</p>
+
+  <h3><span class="num">07</span>Twoje prawa</h3>
+  <p>Ponieważ nie gromadzimy ani nie przetwarzamy Twoich danych osobowych, nie posiadamy żadnych informacji, które moglibyśmy udostępnić, poprawić lub usunąć na Twoje żądanie. Pełną kontrolę nad danymi zapisanymi w aplikacji sprawujesz samodzielnie, przez ustawienia swojego urządzenia. Jeśli masz pytania dotyczące prywatności, napisz na adres kontaktowy.</p>
+
+  <h3><span class="num">08</span>Zmiany w polityce</h3>
+  <p>Jeśli w przyszłości sposób działania aplikacji się zmieni, zaktualizujemy tę stronę i zmienimy datę „Obowiązuje od” na początku dokumentu. Zalecamy okazjonalne sprawdzenie tej strony.</p>
+</section>
+
+<!-- ══════════════════ SLOVENSKY ══════════════════ -->
+<section class="lang" id="sk" lang="sk">
+  <h2>Zásady ochrany osobných údajov</h2>
+
+  <div class="core">
+    <p><strong>Aplikácia nezhromažďuje žiadne osobné údaje, neodosiela dáta na žiadne servery a neobsahuje reklamu ani analytické nástroje.</strong> Všetko, čo pri používaní aplikácie vznikne, zostáva vo vašom zariadení.</p>
+  </div>
+
+  <h3><span class="num">01</span>Kto za aplikáciu zodpovedá</h3>
+  <p>Aplikáciu „Timer for ISSF Training“ (identifikátor <code>ch.m31.issf.training</code>) vydáva Klub Strzelecki M31. Vo veciach ochrany údajov napíšte na adresu uvedenú v úvode tejto stránky.</p>
+
+  <h3><span class="num">02</span>Prístup k mikrofónu</h3>
+  <p>Aplikácia žiada o oprávnenie <code>RECORD_AUDIO</code>, pretože rozpoznáva rany podľa zvuku. Bez neho nefunguje meranie časov rán, teda základná funkcia aplikácie.</p>
+  <p>Ako to funguje:</p>
+  <ul>
+    <li>zvuk je analyzovaný <strong>výhradne v zariadení</strong>, v reálnom čase,</li>
+    <li>aplikácia meria iba <strong>hlasitosť zvuku</strong>, aby rozpoznala okamih rany,</li>
+    <li>nahrávka sa <strong>neukladá</strong> do žiadneho súboru,</li>
+    <li>zvuk sa <strong>nikam neodosiela</strong> ani nezdieľa,</li>
+    <li>počúvanie je aktívne len v okne streľby a vypne sa ihneď po jeho skončení.</li>
+  </ul>
+
+  <h3><span class="num">03</span>Výsledky tréningov</h3>
+  <p>Časy rán, splity a história sedení sa ukladajú do databázy <strong>vo vašom zariadení</strong>. Nemáme k nim prístup.</p>
+  <p>Ak máte zapnutú funkciu Záloha Android (Auto Backup), systém Android môže tieto dáta skopírovať na váš účet Google. Deje sa to v rámci služieb Google, podľa zásad ochrany údajov Google, a zostáva to pod vašou kontrolou — v nastaveniach zariadenia to možno vypnúť. Dáta licencie sú z tejto zálohy zámerne vylúčené.</p>
+  <p>Odinštalovanie aplikácie odstráni všetky uložené výsledky. Históriu môžete tiež zmazať vymazaním dát aplikácie v nastaveniach systému.</p>
+
+  <h3><span class="num">04</span>Nákupy v aplikácii</h3>
+  <p>Platené funkcie sa predávajú prostredníctvom platobného systému Google Play. Celý proces nákupu obsluhuje Google — aplikácia <strong>nevidí ani neuchováva</strong> údaje o karte, adresu ani iné platobné informácie. Dostáva iba potvrdenie, že je nákup aktívny, a to sa ukladá lokálne v zašifrovanej podobe.</p>
+  <p>Na obsluhu nákupov a kontrolu aktualizácií aplikácia používa internetové pripojenie. Pripája sa k službám Google Play a k ničomu inému.</p>
+
+  <h3><span class="num">05</span>Čo aplikácia nerobí</h3>
+  <ul>
+    <li>nevytvára používateľský účet a nevyžaduje prihlásenie,</li>
+    <li>nezhromažďuje meno, e-mail, telefónne číslo ani reklamné identifikátory,</li>
+    <li>nezisťuje ani neukladá vašu polohu,</li>
+    <li>nepoužíva analytické nástroje, štatistiky používania ani hlásenie chýb,</li>
+    <li>nezobrazuje reklamu,</li>
+    <li>neodovzdáva žiadne dáta tretím stranám, pretože žiadne nezhromažďuje.</li>
+  </ul>
+
+  <h3><span class="num">06</span>Deti</h3>
+  <p>Aplikácia je tréningový nástroj pre športových strelcov a nie je určená deťom. Vedome nezhromažďujeme údaje od detí — nezhromažďujeme ich od nikoho.</p>
+
+  <h3><span class="num">07</span>Vaše práva</h3>
+  <p>Keďže vaše osobné údaje nezhromažďujeme ani nespracúvame, nemáme žiadne informácie, ktoré by sme mohli na vašu žiadosť poskytnúť, opraviť alebo zmazať. Dáta uložené aplikáciou kontrolujete sami, cez nastavenia svojho zariadenia. S otázkami k ochrane údajov sa obráťte na kontaktnú adresu.</p>
+
+  <h3><span class="num">08</span>Zmeny týchto zásad</h3>
+  <p>Ak sa správanie aplikácie v budúcnosti zmení, túto stránku aktualizujeme a zmeníme dátum „Obowiązuje od“ v úvode. Odporúčame stránku občas skontrolovať.</p>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <p>Klub Strzelecki M31 · Timer for ISSF Training · <code>ch.m31.issf.training</code></p>
+</footer>
+
+</body>
+</html>
