@@ -138,14 +138,13 @@
 
 <header>
   <div class="wrap">
-    <p class="kicker">Neuron M31</p>
+    <p class="kicker">Andrzej Węgrzyn</p>
     <h1>Privacy Policy<br>Timer for ISSF Training</h1>
     <p class="sub">Zásady ochrany osobních údajů · Adatvédelmi szabályzat · Polityka prywatności · Zásady ochrany osobných údajov</p>
     <dl class="meta">
       <dt>Application</dt><dd>ch.m31.issf.training</dd>
-      <dt>Valid from</dt><dd>2026-08-03</dd>
+      <dt>Valid from</dt><dd>2026-10-15</dd>
       <dt>Contact</dt><dd>neuron.m31@gmail.com</dd>
-      <p><a href="eula.html">EULA</a></p>
     </dl>
   </div>
 </header>
@@ -167,11 +166,11 @@
   <h2>Privacy Policy</h2>
 
   <div class="core">
-    <p><strong>This app collects no personal data, sends nothing to any server, and contains no advertising or analytics.</strong> Everything created while using the app stays on your device.</p>
+    <p><strong>This app collects no personal data, sends nothing to any server, and contains no advertising or analytics.</strong> Everything created while using the app stays on your device. The optional Multiuser function exchanges only technical data — directly between two phones, over Bluetooth.</p>
   </div>
 
   <h3><span class="num">01</span>Who is responsible</h3>
-  <p>The app “Timer for ISSF Training” (identifier <code>ch.m31.issf.training</code>) is published by Klub Strzelecki M31. For privacy matters, write to the address given at the top of this page.</p>
+  <p>The app “Timer for ISSF Training” (identifier <code>ch.m31.issf.training</code>) is published by Andrzej Węgrzyn. For privacy matters, write to the address given at the top of this page.</p>
 
   <h3><span class="num">02</span>Microphone access</h3>
   <p>The app requests the <code>RECORD_AUDIO</code> permission because it detects shots by sound. Without it, shot timing — the app's core function — does not work.</p>
@@ -184,33 +183,44 @@
     <li>listening is active only during the shooting window and stops the moment it ends.</li>
   </ul>
 
-  <h3><span class="num">03</span>Training results</h3>
-  <p>Shot times, splits and session history are stored in a database <strong>on your device</strong>. We have no access to them.</p>
+  <h3><span class="num">03</span>Bluetooth — Multiuser (shared start)</h3>
+  <p>The optional Multiuser function connects two phones running the app directly over Bluetooth Low Energy, so that both start the same training at the same moment. It works only while you use it: a phone is visible to others only while its Client screen is open, and no connection is made without your consent.</p>
+  <p>Permissions: on Android 12 and newer the app requests <code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code> and <code>BLUETOOTH_ADVERTISE</code> (“Nearby devices”). Scanning is declared as not used to derive location. On Android 11 and older, the system allows Bluetooth scanning only with the location permission (<code>ACCESS_FINE_LOCATION</code>) — the app requests it for this reason only and <strong>never reads or stores your location</strong>.</p>
+  <p>What the two phones exchange — directly and only with each other:</p>
+  <ul>
+    <li>the Timer ID — an identifier generated on the phone (a language code and digits derived from the moment it was created), containing no personal data,</li>
+    <li>the app version, the platform and the phone’s manufacturer and model,</li>
+    <li>the selected training or event with its settings, start and stop commands, and clock-synchronisation signals.</li>
+  </ul>
+  <p>Each phone remembers the IDs of the Timers it has connected to (and when), so that the next connection does not need approval. This list is stored only on the device. Nothing is sent to any server. During a shared run, shot detection is switched off on both phones.</p>
+
+  <h3><span class="num">04</span>Training results</h3>
+  <p>Shot times, splits, the scores, firearm class and comments you enter, session history and the club details you provide (name, website, logo) are stored <strong>on your device</strong>. We have no access to them.</p>
   <p>If you have Android Backup (Auto Backup) enabled, Android may copy this data to your Google account. That happens within Google's services, under Google's privacy policy, and remains under your control — you can turn it off in your device settings. Licence data is deliberately excluded from that backup.</p>
   <p>Uninstalling the app deletes all stored results. You can also clear the history by clearing the app's data in system settings.</p>
 
-  <h3><span class="num">04</span>In-app purchases</h3>
+  <h3><span class="num">05</span>In-app purchases</h3>
   <p>Paid features are sold through Google Play's billing system. Google handles the entire purchase process — the app <strong>never sees or stores</strong> card details, billing addresses or any other payment information. It receives only a confirmation that a purchase is active, which is stored locally in encrypted form.</p>
   <p>The app uses an internet connection to handle purchases and to check for updates. It connects to Google Play services and nothing else.</p>
 
-  <h3><span class="num">05</span>What the app does not do</h3>
+  <h3><span class="num">06</span>What the app does not do</h3>
   <ul>
     <li>no user account, no sign-in,</li>
     <li>collects no name, email address, phone number or advertising identifier,</li>
-    <li>does not determine or store your location,</li>
+    <li>does not determine or store your location (for Bluetooth scanning on Android 11 and older, see section 03),</li>
     <li>uses no analytics, usage statistics or crash-reporting services,</li>
     <li>shows no advertising,</li>
     <li>shares no data with third parties, because it gathers none.</li>
   </ul>
 
-  <h3><span class="num">06</span>Children</h3>
+  <h3><span class="num">07</span>Children</h3>
   <p>The app is a training tool for sport shooting competitors and is not directed at children. We do not knowingly collect data from children — we collect none from anyone.</p>
 
-  <h3><span class="num">07</span>Your rights</h3>
+  <h3><span class="num">08</span>Your rights</h3>
   <p>Because we neither collect nor process your personal data, we hold no information that we could disclose, correct or delete on request. You control the data stored by the app yourself, through your device settings. If you have any privacy questions, write to the contact address.</p>
 
-  <h3><span class="num">08</span>Changes to this policy</h3>
-  <p>If the app's behaviour changes in the future, we will update this page and change the “Effective from” date at the top. We recommend checking this page occasionally.</p>
+  <h3><span class="num">09</span>Changes to this policy</h3>
+  <p>If the app's behaviour changes in the future, we will update this page and change the “Valid from” date at the top. We recommend checking this page occasionally.</p>
 </section>
 
 <!-- ══════════════════ ČESKY ══════════════════ -->
@@ -218,11 +228,11 @@
   <h2>Zásady ochrany osobních údajů</h2>
 
   <div class="core">
-    <p><strong>Aplikace neshromažďuje žádné osobní údaje, neodesílá data na žádné servery a neobsahuje reklamu ani analytické nástroje.</strong> Vše, co při používání aplikace vznikne, zůstává ve vašem zařízení.</p>
+    <p><strong>Aplikace neshromažďuje žádné osobní údaje, neodesílá data na žádné servery a neobsahuje reklamu ani analytické nástroje.</strong> Vše, co při používání aplikace vznikne, zůstává ve vašem zařízení. Volitelná funkce Multiuser si vyměňuje pouze technická data — přímo mezi dvěma telefony, přes Bluetooth.</p>
   </div>
 
   <h3><span class="num">01</span>Kdo za aplikaci odpovídá</h3>
-  <p>Aplikaci „Timer for ISSF Training“ (identifikátor <code>ch.m31.issf.training</code>) vydává Klub Strzelecki M31. Ve věcech ochrany údajů napište na adresu uvedenou v úvodu této stránky.</p>
+  <p>Aplikaci „Timer for ISSF Training“ (identifikátor <code>ch.m31.issf.training</code>) vydává Andrzej Węgrzyn. Ve věcech ochrany údajů napište na adresu uvedenou v úvodu této stránky.</p>
 
   <h3><span class="num">02</span>Přístup k mikrofonu</h3>
   <p>Aplikace žádá o oprávnění <code>RECORD_AUDIO</code>, protože rozpoznává rány podle zvuku. Bez něj nefunguje měření časů ran, tedy základní funkce aplikace.</p>
@@ -235,33 +245,44 @@
     <li>naslouchání je aktivní jen v okně střelby a vypne se ihned po jeho skončení.</li>
   </ul>
 
-  <h3><span class="num">03</span>Výsledky tréninků</h3>
-  <p>Časy ran, splity a historie sezení se ukládají do databáze <strong>ve vašem zařízení</strong>. Nemáme k nim přístup.</p>
+  <h3><span class="num">03</span>Bluetooth — Multiuser (společný start)</h3>
+  <p>Volitelná funkce Multiuser propojí dva telefony s aplikací přímo přes Bluetooth Low Energy, aby oba zahájily stejný trénink ve stejném okamžiku. Funguje jen tehdy, když ji používáte: telefon je pro ostatní viditelný pouze při otevřené obrazovce Client a žádné spojení nevznikne bez vašeho souhlasu.</p>
+  <p>Oprávnění: v Androidu 12 a novějším aplikace žádá o <code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code> a <code>BLUETOOTH_ADVERTISE</code> („Zařízení v okolí“). Vyhledávání je deklarováno jako nesloužící k určení polohy. V Androidu 11 a starším systém povoluje vyhledávání zařízení Bluetooth jen s oprávněním k poloze (<code>ACCESS_FINE_LOCATION</code>) — aplikace o něj žádá výhradně z tohoto důvodu a <strong>nikdy vaši polohu nečte ani neukládá</strong>.</p>
+  <p>Co si oba telefony vyměňují — přímo a jen mezi sebou:</p>
+  <ul>
+    <li>ID Timeru — identifikátor vytvořený v telefonu (kód jazyka a číslice odvozené z okamžiku jeho vytvoření), který neobsahuje osobní údaje,</li>
+    <li>verzi aplikace, platformu a výrobce a model telefonu,</li>
+    <li>zvolený trénink nebo soutěž s nastavením, povely ke startu a zastavení a signály synchronizace hodin.</li>
+  </ul>
+  <p>Každý telefon si pamatuje ID Timerů, se kterými se spojil (a kdy), aby další spojení nevyžadovalo souhlas. Tento seznam je uložen pouze v zařízení. Nic se neodesílá na žádný server. Během společného průběhu je detekce ran na obou telefonech vypnutá.</p>
+
+  <h3><span class="num">04</span>Výsledky tréninků</h3>
+  <p>Časy ran, splity, zapsané body, třída zbraně a komentáře, historie sezení a údaje o klubu, které zadáte (název, web, logo), se ukládají <strong>ve vašem zařízení</strong>. Nemáme k nim přístup.</p>
   <p>Pokud máte zapnutou funkci Záloha Android (Auto Backup), systém Android může tato data zkopírovat na váš účet Google. Děje se to v rámci služeb Google, podle zásad ochrany údajů Google, a zůstává to pod vaší kontrolou — v nastavení zařízení to lze vypnout. Data licence jsou z této zálohy záměrně vyloučena.</p>
   <p>Odinstalování aplikace odstraní všechny uložené výsledky. Historii můžete také smazat vymazáním dat aplikace v nastavení systému.</p>
 
-  <h3><span class="num">04</span>Nákupy v aplikaci</h3>
+  <h3><span class="num">05</span>Nákupy v aplikaci</h3>
   <p>Placené funkce se prodávají prostřednictvím platebního systému Google Play. Celý proces nákupu obsluhuje Google — aplikace <strong>nevidí ani neuchovává</strong> údaje o kartě, adresu ani jiné platební informace. Dostává pouze potvrzení, že je nákup aktivní, a to se ukládá lokálně v zašifrované podobě.</p>
   <p>K obsluze nákupů a kontrole aktualizací aplikace používá internetové připojení. Připojuje se ke službám Google Play a k ničemu jinému.</p>
 
-  <h3><span class="num">05</span>Co aplikace nedělá</h3>
+  <h3><span class="num">06</span>Co aplikace nedělá</h3>
   <ul>
     <li>nevytváří uživatelský účet a nevyžaduje přihlášení,</li>
     <li>neshromažďuje jméno, e-mail, telefonní číslo ani reklamní identifikátory,</li>
-    <li>nezjišťuje ani neukládá vaši polohu,</li>
+    <li>nezjišťuje ani neukládá vaši polohu (k vyhledávání Bluetooth v Androidu 11 a starším viz kapitola 03),</li>
     <li>nepoužívá analytické nástroje, statistiky používání ani hlášení chyb,</li>
     <li>nezobrazuje reklamu,</li>
     <li>nepředává žádná data třetím stranám, protože žádná neshromažďuje.</li>
   </ul>
 
-  <h3><span class="num">06</span>Děti</h3>
+  <h3><span class="num">07</span>Děti</h3>
   <p>Aplikace je tréninkový nástroj pro sportovní střelce a není určena dětem. Vědomě neshromažďujeme údaje od dětí — neshromažďujeme je od nikoho.</p>
 
-  <h3><span class="num">07</span>Vaše práva</h3>
+  <h3><span class="num">08</span>Vaše práva</h3>
   <p>Protože vaše osobní údaje neshromažďujeme ani nezpracováváme, nemáme žádné informace, které bychom mohli na vaši žádost poskytnout, opravit nebo smazat. Data uložená aplikací kontrolujete sami, přes nastavení svého zařízení. S dotazy k ochraně údajů se obraťte na kontaktní adresu.</p>
 
-  <h3><span class="num">08</span>Změny těchto zásad</h3>
-  <p>Pokud se chování aplikace v budoucnu změní, tuto stránku aktualizujeme a změníme datum „Obowiązuje od“ v úvodu. Doporučujeme stránku občas zkontrolovat.</p>
+  <h3><span class="num">09</span>Změny těchto zásad</h3>
+  <p>Pokud se chování aplikace v budoucnu změní, tuto stránku aktualizujeme a změníme datum „Valid from“ v úvodu. Doporučujeme stránku občas zkontrolovat.</p>
 </section>
 
 <!-- ══════════════════ MAGYAR ══════════════════ -->
@@ -269,11 +290,11 @@
   <h2>Adatvédelmi szabályzat</h2>
 
   <div class="core">
-    <p><strong>Az alkalmazás nem gyűjt személyes adatokat, nem küld adatokat semmilyen szerverre, és nem tartalmaz reklámot vagy analitikai eszközöket.</strong> Minden, ami az alkalmazás használata során keletkezik, az Ön eszközén marad.</p>
+    <p><strong>Az alkalmazás nem gyűjt személyes adatokat, nem küld adatokat semmilyen szerverre, és nem tartalmaz reklámot vagy analitikai eszközöket.</strong> Minden, ami az alkalmazás használata során keletkezik, az Ön eszközén marad. Az opcionális Multiuser funkció csak technikai adatokat cserél — közvetlenül két telefon között, Bluetooth-on.</p>
   </div>
 
   <h3><span class="num">01</span>Ki felel az alkalmazásért</h3>
-  <p>A „Timer for ISSF Training“ alkalmazást (azonosító: <code>ch.m31.issf.training</code>) a Klub Strzelecki M31 adja ki. Adatvédelmi ügyekben írjon az oldal tetején megadott címre.</p>
+  <p>A „Timer for ISSF Training“ alkalmazást (azonosító: <code>ch.m31.issf.training</code>) Andrzej Węgrzyn adja ki. Adatvédelmi ügyekben írjon az oldal tetején megadott címre.</p>
 
   <h3><span class="num">02</span>Mikrofon-hozzáférés</h3>
   <p>Az alkalmazás azért kéri a <code>RECORD_AUDIO</code> engedélyt, mert a lövéseket hang alapján érzékeli. Enélkül nem működik a lövések időmérése, ami az alkalmazás alapfunkciója.</p>
@@ -286,33 +307,44 @@
     <li>a hallgatás csak a lövési ablakban aktív, és annak végeztével azonnal kikapcsol.</li>
   </ul>
 
-  <h3><span class="num">03</span>Edzések eredményei</h3>
-  <p>A lövések idejét, a splitteket és a sessiók előzményeit egy adatbázis tárolja <strong>az Ön eszközén</strong>. Nincs hozzájuk hozzáférésünk.</p>
+  <h3><span class="num">03</span>Bluetooth — Multiuser (közös rajt)</h3>
+  <p>Az opcionális Multiuser funkció két, az alkalmazást futtató telefont kapcsol össze közvetlenül Bluetooth Low Energy kapcsolaton, hogy mindkettő ugyanabban a pillanatban kezdje ugyanazt az edzést. Csak akkor működik, amikor használja: a telefon kizárólag nyitott Client képernyő mellett látható mások számára, és az Ön engedélye nélkül nem jön létre kapcsolat.</p>
+  <p>Engedélyek: Android 12 és újabb rendszeren az alkalmazás a <code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code> és <code>BLUETOOTH_ADVERTISE</code> („Közeli eszközök”) engedélyt kéri. A keresés úgy van deklarálva, hogy nem szolgál helymeghatározásra. Android 11 és régebbi rendszeren a rendszer csak helymeghatározási engedéllyel (<code>ACCESS_FINE_LOCATION</code>) engedi a Bluetooth-eszközök keresését — az alkalmazás kizárólag ezért kéri, és <strong>soha nem olvassa és nem tárolja az Ön tartózkodási helyét</strong>.</p>
+  <p>Amit a két telefon kicserél — közvetlenül és csak egymással:</p>
+  <ul>
+    <li>a Timer-azonosító — a telefonon létrehozott azonosító (nyelvkód és a létrehozás pillanatából származtatott számjegyek), amely nem tartalmaz személyes adatot,</li>
+    <li>az alkalmazás verziója, a platform, valamint a telefon gyártója és típusa,</li>
+    <li>a kiválasztott edzés vagy verseny a beállításaival, az indítási és leállítási parancsok, valamint az órák szinkronizálásának jelei.</li>
+  </ul>
+  <p>Mindkét telefon megjegyzi azoknak a Timereknek az azonosítóját, amelyekhez kapcsolódott (és az időpontot), hogy a következő kapcsolódáshoz ne kelljen engedély. Ez a lista csak az eszközön tárolódik. Semmi sem kerül semmilyen szerverre. Közös futás alatt a lövésérzékelés mindkét telefonon ki van kapcsolva.</p>
+
+  <h3><span class="num">04</span>Edzések eredményei</h3>
+  <p>A lövések ideje, a splitek, a beírt pontok, fegyverosztály és megjegyzések, a sessiók előzményei és az Ön által megadott klubadatok (név, weboldal, logó) <strong>az Ön eszközén</strong> tárolódnak. Nincs hozzájuk hozzáférésünk.</p>
   <p>Ha be van kapcsolva az Android Biztonsági mentés (Auto Backup) funkció, az Android átmásolhatja ezeket az adatokat az Ön Google-fiókjába. Ez a Google szolgáltatásain belül, a Google adatvédelmi szabályzata szerint történik, és az Ön ellenőrzése alatt marad — az eszköz beállításaiban kikapcsolható. A licencadatok szándékosan ki vannak zárva ebből a mentésből.</p>
   <p>Az alkalmazás eltávolítása töröl minden mentett eredményt. Az előzményeket az alkalmazás adatainak törlésével is kiürítheti a rendszerbeállításokban.</p>
 
-  <h3><span class="num">04</span>Alkalmazáson belüli vásárlások</h3>
+  <h3><span class="num">05</span>Alkalmazáson belüli vásárlások</h3>
   <p>A fizetős funkciókat a Google Play számlázási rendszerén keresztül értékesítjük. A teljes vásárlási folyamatot a Google kezeli — az alkalmazás <strong>nem látja és nem tárolja</strong> a kártyaadatokat, a számlázási címet vagy más fizetési információt. Csak egy visszaigazolást kap arról, hogy a vásárlás aktív, amelyet helyben, titkosított formában tárol.</p>
   <p>A vásárlások kezeléséhez és a frissítések ellenőrzéséhez az alkalmazás internetkapcsolatot használ. Ilyenkor a Google Play szolgáltatásaihoz kapcsolódik, és semmi máshoz.</p>
 
-  <h3><span class="num">05</span>Amit az alkalmazás nem tesz</h3>
+  <h3><span class="num">06</span>Amit az alkalmazás nem tesz</h3>
   <ul>
     <li>nem hoz létre felhasználói fiókot és nem igényel bejelentkezést,</li>
     <li>nem gyűjt nevet, e-mail-címet, telefonszámot vagy reklámazonosítót,</li>
-    <li>nem határozza meg és nem tárolja az Ön tartózkodási helyét,</li>
+    <li>nem határozza meg és nem tárolja az Ön tartózkodási helyét (az Android 11 és régebbi rendszereken végzett Bluetooth-keresésről lásd a 03. fejezetet),</li>
     <li>nem használ analitikai eszközöket, használati statisztikákat vagy hibajelentő rendszereket,</li>
     <li>nem jelenít meg reklámot,</li>
     <li>nem ad át semmilyen adatot harmadik feleknek, mert semmit sem gyűjt.</li>
   </ul>
 
-  <h3><span class="num">06</span>Gyermekek</h3>
+  <h3><span class="num">07</span>Gyermekek</h3>
   <p>Az alkalmazás sportlövők edzéseszköze, és nem gyermekeknek szól. Tudatosan nem gyűjtünk adatokat gyermekektől — senkitől sem gyűjtünk.</p>
 
-  <h3><span class="num">07</span>Az Ön jogai</h3>
+  <h3><span class="num">08</span>Az Ön jogai</h3>
   <p>Mivel az Ön személyes adatait nem gyűjtjük és nem dolgozzuk fel, nincs olyan információnk, amelyet kérésére kiadhatnánk, javíthatnánk vagy törölhetnénk. Az alkalmazás által tárolt adatokat Ön maga felügyeli, az eszköze beállításain keresztül. Adatvédelmi kérdésekkel forduljon a kapcsolattartási címhez.</p>
 
-  <h3><span class="num">08</span>A szabályzat módosításai</h3>
-  <p>Ha az alkalmazás működése a jövőben megváltozik, frissítjük ezt az oldalt, és módosítjuk a „Obowiązuje od“ dátumot az elején. Javasoljuk az oldal alkalmankénti ellenőrzését.</p>
+  <h3><span class="num">09</span>A szabályzat módosításai</h3>
+  <p>Ha az alkalmazás működése a jövőben megváltozik, frissítjük ezt az oldalt, és módosítjuk az elején található „Valid from” dátumot. Javasoljuk az oldal alkalmankénti ellenőrzését.</p>
 </section>
 
 <!-- ══════════════════ POLSKI ══════════════════ -->
@@ -320,11 +352,11 @@
   <h2>Polityka prywatności</h2>
 
   <div class="core">
-    <p><strong>Aplikacja nie zbiera żadnych danych osobowych, nie wysyła danych na żadne serwery i nie zawiera reklam ani narzędzi analitycznych.</strong> Wszystko, co powstaje w trakcie korzystania z aplikacji, pozostaje na Twoim urządzeniu.</p>
+    <p><strong>Aplikacja nie zbiera żadnych danych osobowych, nie wysyła danych na żadne serwery i nie zawiera reklam ani narzędzi analitycznych.</strong> Wszystko, co powstaje w trakcie korzystania z aplikacji, pozostaje na Twoim urządzeniu. Opcjonalna funkcja Multiuser wymienia wyłącznie dane techniczne — bezpośrednio między dwoma telefonami, przez Bluetooth.</p>
   </div>
 
   <h3><span class="num">01</span>Kto odpowiada za aplikację</h3>
-  <p>Aplikację „Timer for ISSF Training” (identyfikator <code>ch.m31.issf.training</code>) udostępnia Klub Strzelecki M31. W sprawach dotyczących prywatności napisz na adres podany na początku tej strony.</p>
+  <p>Aplikację „Timer for ISSF Training” (identyfikator <code>ch.m31.issf.training</code>) udostępnia Andrzej Węgrzyn. W sprawach dotyczących prywatności napisz na adres podany na początku tej strony.</p>
 
   <h3><span class="num">02</span>Dostęp do mikrofonu</h3>
   <p>Aplikacja prosi o uprawnienie <code>RECORD_AUDIO</code>, ponieważ wykrywa strzały na podstawie dźwięku. Bez tego nie działa pomiar czasu strzałów, czyli podstawowa funkcja aplikacji.</p>
@@ -337,33 +369,44 @@
     <li>nasłuch jest włączony tylko w oknie strzelania i wyłącza się natychmiast po jego zakończeniu.</li>
   </ul>
 
-  <h3><span class="num">03</span>Wyniki treningów</h3>
-  <p>Czasy strzałów, splity i historia sesji są zapisywane w bazie danych <strong>na Twoim urządzeniu</strong>. Nie mamy do nich dostępu.</p>
+  <h3><span class="num">03</span>Bluetooth — Multiuser (wspólny start)</h3>
+  <p>Opcjonalna funkcja Multiuser łączy dwa telefony z aplikacją bezpośrednio przez Bluetooth Low Energy, aby oba rozpoczęły ten sam trening w tej samej chwili. Działa tylko wtedy, gdy z niej korzystasz: telefon jest widoczny dla innych wyłącznie przy otwartym ekranie Client, a żadne połączenie nie powstaje bez Twojej zgody.</p>
+  <p>Uprawnienia: w Androidzie 12 i nowszym aplikacja prosi o <code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code> i <code>BLUETOOTH_ADVERTISE</code> („Urządzenia w pobliżu”). Wyszukiwanie jest zadeklarowane jako niesłużące do ustalania lokalizacji. W Androidzie 11 i starszym system pozwala wyszukiwać urządzenia Bluetooth tylko z uprawnieniem do lokalizacji (<code>ACCESS_FINE_LOCATION</code>) — aplikacja prosi o nie wyłącznie z tego powodu i <strong>nigdy nie odczytuje ani nie zapisuje Twojej lokalizacji</strong>.</p>
+  <p>Co wymieniają ze sobą oba telefony — bezpośrednio i tylko między sobą:</p>
+  <ul>
+    <li>ID Timera — identyfikator utworzony w telefonie (kod języka i cyfry wyliczone z chwili jego utworzenia), niezawierający danych osobowych,</li>
+    <li>wersję aplikacji, platformę oraz producenta i model telefonu,</li>
+    <li>wybrany trening lub konkurencję z ustawieniami, polecenia startu i zatrzymania oraz sygnały synchronizacji zegarów.</li>
+  </ul>
+  <p>Każdy telefon zapamiętuje ID Timerów, z którymi się łączył (i kiedy), aby kolejne połączenie nie wymagało zgody. Ta lista jest przechowywana wyłącznie na urządzeniu. Nic nie jest wysyłane na żaden serwer. W czasie wspólnego przebiegu wykrywanie strzałów jest wyłączone na obu telefonach.</p>
+
+  <h3><span class="num">04</span>Wyniki treningów</h3>
+  <p>Czasy strzałów, splity, wpisane punkty, klasa broni i komentarze, historia sesji oraz podane przez Ciebie dane klubu (nazwa, strona internetowa, logo) są przechowywane <strong>na Twoim urządzeniu</strong>. Nie mamy do nich dostępu.</p>
   <p>Jeśli masz włączoną funkcję Kopia zapasowa Android (Auto Backup), system Android może skopiować te dane na Twoje konto Google. Odbywa się to w ramach usług Google, zgodnie z polityką prywatności Google, i pozostaje pod Twoją kontrolą — możesz to wyłączyć w ustawieniach urządzenia. Dane licencji są z tej kopii celowo wyłączone.</p>
   <p>Usunięcie aplikacji usuwa wszystkie zapisane wyniki. Historię możesz też skasować, czyszcząc dane aplikacji w ustawieniach systemu.</p>
 
-  <h3><span class="num">04</span>Zakupy w aplikacji</h3>
+  <h3><span class="num">05</span>Zakupy w aplikacji</h3>
   <p>Płatne funkcje są sprzedawane przez system płatności Google Play. Cały proces zakupu obsługuje Google — aplikacja <strong>nie widzi i nie przechowuje</strong> danych karty, adresu ani innych informacji płatniczych. Otrzymuje wyłącznie potwierdzenie, że zakup jest aktywny. Potwierdzenie to jest zapisywane lokalnie w zaszyfrowanej formie.</p>
   <p>Do obsługi zakupów i sprawdzania aktualizacji aplikacja korzysta z połączenia internetowego. Łączy się wtedy z usługami Google Play i z niczym więcej.</p>
 
-  <h3><span class="num">05</span>Czego aplikacja nie robi</h3>
+  <h3><span class="num">06</span>Czego aplikacja nie robi</h3>
   <ul>
     <li>nie tworzy konta użytkownika i nie wymaga logowania,</li>
     <li>nie zbiera imienia, adresu e-mail, numeru telefonu ani identyfikatorów reklamowych,</li>
-    <li>nie ustala ani nie zapisuje Twojej lokalizacji,</li>
+    <li>nie ustala ani nie zapisuje Twojej lokalizacji (o wyszukiwaniu Bluetooth w Androidzie 11 i starszym — patrz rozdział 03),</li>
     <li>nie korzysta z narzędzi analitycznych, statystyk użycia ani systemów raportowania błędów,</li>
     <li>nie wyświetla reklam,</li>
     <li>nie przekazuje żadnych danych osobom trzecim, bo żadnych nie gromadzi.</li>
   </ul>
 
-  <h3><span class="num">06</span>Dzieci</h3>
+  <h3><span class="num">07</span>Dzieci</h3>
   <p>Aplikacja jest narzędziem treningowym dla zawodników sportu strzeleckiego i nie jest skierowana do dzieci. Nie zbieramy świadomie danych od dzieci — nie zbieramy ich w ogóle od nikogo.</p>
 
-  <h3><span class="num">07</span>Twoje prawa</h3>
+  <h3><span class="num">08</span>Twoje prawa</h3>
   <p>Ponieważ nie gromadzimy ani nie przetwarzamy Twoich danych osobowych, nie posiadamy żadnych informacji, które moglibyśmy udostępnić, poprawić lub usunąć na Twoje żądanie. Pełną kontrolę nad danymi zapisanymi w aplikacji sprawujesz samodzielnie, przez ustawienia swojego urządzenia. Jeśli masz pytania dotyczące prywatności, napisz na adres kontaktowy.</p>
 
-  <h3><span class="num">08</span>Zmiany w polityce</h3>
-  <p>Jeśli w przyszłości sposób działania aplikacji się zmieni, zaktualizujemy tę stronę i zmienimy datę „Obowiązuje od” na początku dokumentu. Zalecamy okazjonalne sprawdzenie tej strony.</p>
+  <h3><span class="num">09</span>Zmiany w polityce</h3>
+  <p>Jeśli w przyszłości sposób działania aplikacji się zmieni, zaktualizujemy tę stronę i zmienimy datę „Valid from” na początku dokumentu. Zalecamy okazjonalne sprawdzenie tej strony.</p>
 </section>
 
 <!-- ══════════════════ SLOVENSKY ══════════════════ -->
@@ -371,11 +414,11 @@
   <h2>Zásady ochrany osobných údajov</h2>
 
   <div class="core">
-    <p><strong>Aplikácia nezhromažďuje žiadne osobné údaje, neodosiela dáta na žiadne servery a neobsahuje reklamu ani analytické nástroje.</strong> Všetko, čo pri používaní aplikácie vznikne, zostáva vo vašom zariadení.</p>
+    <p><strong>Aplikácia nezhromažďuje žiadne osobné údaje, neodosiela dáta na žiadne servery a neobsahuje reklamu ani analytické nástroje.</strong> Všetko, čo pri používaní aplikácie vznikne, zostáva vo vašom zariadení. Voliteľná funkcia Multiuser si vymieňa iba technické údaje — priamo medzi dvoma telefónmi, cez Bluetooth.</p>
   </div>
 
   <h3><span class="num">01</span>Kto za aplikáciu zodpovedá</h3>
-  <p>Aplikáciu „Timer for ISSF Training“ (identifikátor <code>ch.m31.issf.training</code>) vydáva Klub Strzelecki M31. Vo veciach ochrany údajov napíšte na adresu uvedenú v úvode tejto stránky.</p>
+  <p>Aplikáciu „Timer for ISSF Training“ (identifikátor <code>ch.m31.issf.training</code>) vydáva Andrzej Węgrzyn. Vo veciach ochrany údajov napíšte na adresu uvedenú v úvode tejto stránky.</p>
 
   <h3><span class="num">02</span>Prístup k mikrofónu</h3>
   <p>Aplikácia žiada o oprávnenie <code>RECORD_AUDIO</code>, pretože rozpoznáva rany podľa zvuku. Bez neho nefunguje meranie časov rán, teda základná funkcia aplikácie.</p>
@@ -388,39 +431,51 @@
     <li>počúvanie je aktívne len v okne streľby a vypne sa ihneď po jeho skončení.</li>
   </ul>
 
-  <h3><span class="num">03</span>Výsledky tréningov</h3>
-  <p>Časy rán, splity a história sedení sa ukladajú do databázy <strong>vo vašom zariadení</strong>. Nemáme k nim prístup.</p>
+  <h3><span class="num">03</span>Bluetooth — Multiuser (spoločný štart)</h3>
+  <p>Voliteľná funkcia Multiuser prepojí dva telefóny s aplikáciou priamo cez Bluetooth Low Energy, aby oba začali rovnaký tréning v rovnakom okamihu. Funguje len vtedy, keď ju používate: telefón je pre ostatných viditeľný iba pri otvorenej obrazovke Client a žiadne spojenie nevznikne bez vášho súhlasu.</p>
+  <p>Povolenia: v Androide 12 a novšom aplikácia žiada o <code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code> a <code>BLUETOOTH_ADVERTISE</code> („Zariadenia v okolí“). Vyhľadávanie je deklarované ako neslúžiace na určenie polohy. V Androide 11 a staršom systém povoľuje vyhľadávanie zariadení Bluetooth iba s povolením k polohe (<code>ACCESS_FINE_LOCATION</code>) — aplikácia oň žiada výlučne z tohto dôvodu a <strong>nikdy vašu polohu nečíta ani neukladá</strong>.</p>
+  <p>Čo si oba telefóny vymieňajú — priamo a len medzi sebou:</p>
+  <ul>
+    <li>ID Timera — identifikátor vytvorený v telefóne (kód jazyka a číslice odvodené z okamihu jeho vytvorenia), ktorý neobsahuje osobné údaje,</li>
+    <li>verziu aplikácie, platformu a výrobcu a model telefónu,</li>
+    <li>zvolený tréning alebo súťaž s nastaveniami, povely na štart a zastavenie a signály synchronizácie hodín.</li>
+  </ul>
+  <p>Každý telefón si pamätá ID Timerov, s ktorými sa spojil (a kedy), aby ďalšie spojenie nevyžadovalo súhlas. Tento zoznam je uložený iba v zariadení. Nič sa neodosiela na žiadny server. Počas spoločného priebehu je detekcia rán na oboch telefónoch vypnutá.</p>
+
+  <h3><span class="num">04</span>Výsledky tréningov</h3>
+  <p>Časy rán, splity, zapísané body, trieda zbrane a komentáre, história sedení a údaje o klube, ktoré zadáte (názov, web, logo), sa ukladajú <strong>vo vašom zariadení</strong>. Nemáme k nim prístup.</p>
   <p>Ak máte zapnutú funkciu Záloha Android (Auto Backup), systém Android môže tieto dáta skopírovať na váš účet Google. Deje sa to v rámci služieb Google, podľa zásad ochrany údajov Google, a zostáva to pod vašou kontrolou — v nastaveniach zariadenia to možno vypnúť. Dáta licencie sú z tejto zálohy zámerne vylúčené.</p>
   <p>Odinštalovanie aplikácie odstráni všetky uložené výsledky. Históriu môžete tiež zmazať vymazaním dát aplikácie v nastaveniach systému.</p>
 
-  <h3><span class="num">04</span>Nákupy v aplikácii</h3>
+  <h3><span class="num">05</span>Nákupy v aplikácii</h3>
   <p>Platené funkcie sa predávajú prostredníctvom platobného systému Google Play. Celý proces nákupu obsluhuje Google — aplikácia <strong>nevidí ani neuchováva</strong> údaje o karte, adresu ani iné platobné informácie. Dostáva iba potvrdenie, že je nákup aktívny, a to sa ukladá lokálne v zašifrovanej podobe.</p>
   <p>Na obsluhu nákupov a kontrolu aktualizácií aplikácia používa internetové pripojenie. Pripája sa k službám Google Play a k ničomu inému.</p>
 
-  <h3><span class="num">05</span>Čo aplikácia nerobí</h3>
+  <h3><span class="num">06</span>Čo aplikácia nerobí</h3>
   <ul>
     <li>nevytvára používateľský účet a nevyžaduje prihlásenie,</li>
     <li>nezhromažďuje meno, e-mail, telefónne číslo ani reklamné identifikátory,</li>
-    <li>nezisťuje ani neukladá vašu polohu,</li>
+    <li>nezisťuje ani neukladá vašu polohu (k vyhľadávaniu Bluetooth v Androide 11 a staršom pozri kapitolu 03),</li>
     <li>nepoužíva analytické nástroje, štatistiky používania ani hlásenie chýb,</li>
     <li>nezobrazuje reklamu,</li>
     <li>neodovzdáva žiadne dáta tretím stranám, pretože žiadne nezhromažďuje.</li>
   </ul>
 
-  <h3><span class="num">06</span>Deti</h3>
+  <h3><span class="num">07</span>Deti</h3>
   <p>Aplikácia je tréningový nástroj pre športových strelcov a nie je určená deťom. Vedome nezhromažďujeme údaje od detí — nezhromažďujeme ich od nikoho.</p>
 
-  <h3><span class="num">07</span>Vaše práva</h3>
+  <h3><span class="num">08</span>Vaše práva</h3>
   <p>Keďže vaše osobné údaje nezhromažďujeme ani nespracúvame, nemáme žiadne informácie, ktoré by sme mohli na vašu žiadosť poskytnúť, opraviť alebo zmazať. Dáta uložené aplikáciou kontrolujete sami, cez nastavenia svojho zariadenia. S otázkami k ochrane údajov sa obráťte na kontaktnú adresu.</p>
 
-  <h3><span class="num">08</span>Zmeny týchto zásad</h3>
-  <p>Ak sa správanie aplikácie v budúcnosti zmení, túto stránku aktualizujeme a zmeníme dátum „Obowiązuje od“ v úvode. Odporúčame stránku občas skontrolovať.</p>
+  <h3><span class="num">09</span>Zmeny týchto zásad</h3>
+  <p>Ak sa správanie aplikácie v budúcnosti zmení, túto stránku aktualizujeme a zmeníme dátum „Valid from“ v úvode. Odporúčame stránku občas skontrolovať.</p>
 </section>
 
 </main>
 
 <footer class="wrap">
-  <p>Klub Strzelecki M31 · Timer for ISSF Training · <code>ch.m31.issf.training</code></p>
+  <p>Andrzej Węgrzyn · Timer for ISSF Training · <code>ch.m31.issf.training</code></p>
+  <p><a href="eula.html">End User Licence Agreement · Licenční smlouva · Licencszerződés · Umowa licencyjna · Licenčná zmluva</a></p>
 </footer>
 
 </body>
